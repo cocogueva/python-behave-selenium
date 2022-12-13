@@ -1,0 +1,123 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Background",
+      "location": "features/e2e.feature:3",
+      "name": "",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/e2e.feature:4",
+          "name": "The Saucelabs portal is opened",
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:5",
+          "name": "Provide the credentials",
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/e2e.feature:6",
+          "name": "Click on the Login button",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/e2e.feature:7",
+          "name": "Login is successful and inventory is opened",
+          "step_type": "then"
+        }
+      ],
+      "type": "background"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/e2e.feature:9",
+      "name": "Buy a few articles from inventory page",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/e2e.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:8"
+          },
+          "name": "The Saucelabs portal is opened",
+          "result": {
+            "duration": 2.1367483139038086,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:20"
+          },
+          "name": "Provide the credentials",
+          "result": {
+            "duration": 0.24192476272583008,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/e2e.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:29"
+          },
+          "name": "Click on the Login button",
+          "result": {
+            "duration": 0.1100008487701416,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/e2e.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:37"
+          },
+          "name": "Login is successful and inventory is opened",
+          "result": {
+            "duration": 0.0500025749206543,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:10",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:45"
+          },
+          "name": "Add to cart two first elements",
+          "result": {
+            "duration": 0.25357866287231445,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/e2e.feature:1",
+  "name": "Saucelabs demo End to end",
+  "status": "passed",
+  "tags": []
+}
+]
