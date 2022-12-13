@@ -47,7 +47,45 @@ def fill_cart(context):
     try:
         context.inventoryPage.addItemsToCart()
         assert context.inventoryPage.validateCartQuantity()
-    except Exception: 
-        traceback.print_exc()
+    except:
         context.driver.close()
         assert False, "Test is failed in adding items to the cart"
+
+@then(u'Go to cart and checkout added items')
+def checkout_cart(context):
+    try:
+        context.inventoryPage.goToCart()
+        assert context.inventoryPage.validateCartUrl()
+        context.inventoryPage.checkoutCart()
+    except:
+        context.driver.close()
+        assert False, "Test is failed checking out items in the cart"
+
+@then(u'Insert payment information')
+def checkout_step_one(context):
+    try:
+        context.inventoryPage.fillStepOneInfo('Jorge', 'Guevara', '15036')
+    except:
+        context.driver.close()
+        assert False, "Test is failed checking filling step one"
+
+@when(u'Finish the checkout')
+def finish_checkout(context):
+    try:
+        context.inventoryPage.finishCheckout()
+    except:
+        context.driver.close()
+        assert False, "Test is failed almost at the end"
+
+@then(u'You\'ll get a thanks')
+def thanks(context):
+    assert context.inventoryPage.validateMessage()
+    
+@then(u'Click hamburguer menu and click log out link')
+def do_logout(context):
+    context.loginPage.log_out()
+
+
+@then(u'You\'ll be out of the system')
+def step_impl(context):
+    pass

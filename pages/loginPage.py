@@ -6,6 +6,9 @@ class LoginPage(BasePage):
     TXT_PASSWORD = (By.ID, "password")
     BTN_LOGIN = (By.ID, "login-button")
 
+    HAMBURGER = (By.ID, "react-burger-menu-btn")
+    LOGOUT = (By.ID, "logout_sidebar_link")
+
     def __init__(self, driver):
             super().__init__(driver)
 
@@ -15,3 +18,7 @@ class LoginPage(BasePage):
 
     def enter_login(self):
             self.click_element(self.BTN_LOGIN)
+
+    def log_out(self):
+        self.click_element(self.HAMBURGER)
+        self.click_element(self.LOGOUT)

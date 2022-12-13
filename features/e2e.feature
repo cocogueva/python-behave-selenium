@@ -8,7 +8,11 @@ Background:
     
 Scenario: Buy a few articles from inventory page
     And Add to cart two first elements
-    #And Go to cart and checkout added items
-    #And Insert payment information
-    #And Finish the checkout
-    #Then You'll get a thanks
+    And Go to cart and checkout added items
+    And Insert payment information
+    When Finish the checkout
+    Then You'll get a thanks
+
+Scenario: Logout of the system
+    And Click hamburguer menu and click log out link
+    Then You'll be out of the system

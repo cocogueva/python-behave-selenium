@@ -48,7 +48,7 @@
           },
           "name": "The Saucelabs portal is opened",
           "result": {
-            "duration": 2.1367483139038086,
+            "duration": 2.1689395904541016,
             "status": "passed"
           },
           "step_type": "given"
@@ -62,7 +62,7 @@
           },
           "name": "Provide the credentials",
           "result": {
-            "duration": 0.24192476272583008,
+            "duration": 0.2558619976043701,
             "status": "passed"
           },
           "step_type": "given"
@@ -76,7 +76,7 @@
           },
           "name": "Click on the Login button",
           "result": {
-            "duration": 0.1100008487701416,
+            "duration": 0.10499835014343262,
             "status": "passed"
           },
           "step_type": "when"
@@ -90,7 +90,7 @@
           },
           "name": "Login is successful and inventory is opened",
           "result": {
-            "duration": 0.0500025749206543,
+            "duration": 0.012002706527709961,
             "status": "passed"
           },
           "step_type": "then"
@@ -104,7 +104,157 @@
           },
           "name": "Add to cart two first elements",
           "result": {
-            "duration": 0.25357866287231445,
+            "duration": 0.32892441749572754,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:11",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:54"
+          },
+          "name": "Go to cart and checkout added items",
+          "result": {
+            "duration": 0.1040029525756836,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:64"
+          },
+          "name": "Insert payment information",
+          "result": {
+            "duration": 0.35976433753967285,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/e2e.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:72"
+          },
+          "name": "Finish the checkout",
+          "result": {
+            "duration": 0.04501843452453613,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/e2e.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:80"
+          },
+          "name": "You'll get a thanks",
+          "result": {
+            "duration": 0.04198455810546875,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/e2e.feature:16",
+      "name": "Logout of the system",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/e2e.feature:4",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:8"
+          },
+          "name": "The Saucelabs portal is opened",
+          "result": {
+            "duration": 2.1665852069854736,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:20"
+          },
+          "name": "Provide the credentials",
+          "result": {
+            "duration": 0.24552130699157715,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/e2e.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:29"
+          },
+          "name": "Click on the Login button",
+          "result": {
+            "duration": 0.10700130462646484,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/e2e.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:37"
+          },
+          "name": "Login is successful and inventory is opened",
+          "result": {
+            "duration": 0.016997814178466797,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/e2e.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:84"
+          },
+          "name": "Click hamburguer menu and click log out link",
+          "result": {
+            "duration": 0.7625999450683594,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/e2e.feature:18",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/e2esteps.py:89"
+          },
+          "name": "You'll be out of the system",
+          "result": {
+            "duration": 0.0009822845458984375,
             "status": "passed"
           },
           "step_type": "then"
