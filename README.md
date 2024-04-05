@@ -1,7 +1,6 @@
 ## **Automation Challenge**
 
 This is a BDD automation framework developed on Selenium and Python Behave.
-For the application to squad makers company.
 
 Page Object Model is followed in this framework
 

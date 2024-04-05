@@ -37,7 +37,7 @@
       "keyword": "Scenario",
       "location": "features/e2e.feature:9",
       "name": "Buy a few articles from inventory page",
-      "status": "passed",
+      "status": "failed",
       "steps": [
         {
           "keyword": "Given",
@@ -48,121 +48,90 @@
           },
           "name": "The Saucelabs portal is opened",
           "result": {
-            "duration": 2.1689395904541016,
-            "status": "passed"
+            "duration": 3.0443601608276367,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 97, in start",
+              "    path = SeleniumManager().driver_location(browser)",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\selenium_manager.py\", line 74, in driver_location",
+              "    result = self.run((binary, flag, browser))",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\selenium_manager.py\", line 93, in run",
+              "    raise SeleniumManagerException(f\"Selenium manager failed for: {command}. {stderr}\")",
+              "selenium.common.exceptions.SeleniumManagerException: Message: Selenium manager failed for: C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\windows\\selenium-manager.exe --browser chrome. ",
+              "",
+              "",
+              "During handling of the above exception, another exception occurred:",
+              "",
+              "Traceback (most recent call last):",
+              "  File \"C:\\Python310\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Python310\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"features\\steps\\e2esteps.py\", line 10, in launch_browser",
+              "    context.driver = webdriver.Chrome(executable_path=TestData.CHROME_EXECUTABLE_PATH)",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py\", line 81, in __init__",
+              "    super().__init__(",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py\", line 103, in __init__",
+              "    self.service.start()",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 100, in start",
+              "    raise err",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 90, in start",
+              "    self._start_process(self.path)",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 213, in _start_process",
+              "    raise WebDriverException(",
+              "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+              ""
+            ],
+            "status": "failed"
           },
           "step_type": "given"
         },
         {
           "keyword": "And",
           "location": "features/e2e.feature:5",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:20"
-          },
           "name": "Provide the credentials",
-          "result": {
-            "duration": 0.2558619976043701,
-            "status": "passed"
-          },
           "step_type": "given"
         },
         {
           "keyword": "When",
           "location": "features/e2e.feature:6",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:29"
-          },
           "name": "Click on the Login button",
-          "result": {
-            "duration": 0.10499835014343262,
-            "status": "passed"
-          },
           "step_type": "when"
         },
         {
           "keyword": "Then",
           "location": "features/e2e.feature:7",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:37"
-          },
           "name": "Login is successful and inventory is opened",
-          "result": {
-            "duration": 0.012002706527709961,
-            "status": "passed"
-          },
           "step_type": "then"
         },
         {
           "keyword": "And",
           "location": "features/e2e.feature:10",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:45"
-          },
           "name": "Add to cart two first elements",
-          "result": {
-            "duration": 0.32892441749572754,
-            "status": "passed"
-          },
           "step_type": "then"
         },
         {
           "keyword": "And",
           "location": "features/e2e.feature:11",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:54"
-          },
           "name": "Go to cart and checkout added items",
-          "result": {
-            "duration": 0.1040029525756836,
-            "status": "passed"
-          },
           "step_type": "then"
         },
         {
           "keyword": "And",
           "location": "features/e2e.feature:12",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:64"
-          },
           "name": "Insert payment information",
-          "result": {
-            "duration": 0.35976433753967285,
-            "status": "passed"
-          },
           "step_type": "then"
         },
         {
           "keyword": "When",
           "location": "features/e2e.feature:13",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:72"
-          },
           "name": "Finish the checkout",
-          "result": {
-            "duration": 0.04501843452453613,
-            "status": "passed"
-          },
           "step_type": "when"
         },
         {
           "keyword": "Then",
           "location": "features/e2e.feature:14",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:80"
-          },
           "name": "You'll get a thanks",
-          "result": {
-            "duration": 0.04198455810546875,
-            "status": "passed"
-          },
           "step_type": "then"
         }
       ],
@@ -173,7 +142,7 @@
       "keyword": "Scenario",
       "location": "features/e2e.feature:16",
       "name": "Logout of the system",
-      "status": "passed",
+      "status": "failed",
       "steps": [
         {
           "keyword": "Given",
@@ -184,79 +153,72 @@
           },
           "name": "The Saucelabs portal is opened",
           "result": {
-            "duration": 2.1665852069854736,
-            "status": "passed"
+            "duration": 0.7367796897888184,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 97, in start",
+              "    path = SeleniumManager().driver_location(browser)",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\selenium_manager.py\", line 74, in driver_location",
+              "    result = self.run((binary, flag, browser))",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\selenium_manager.py\", line 93, in run",
+              "    raise SeleniumManagerException(f\"Selenium manager failed for: {command}. {stderr}\")",
+              "selenium.common.exceptions.SeleniumManagerException: Message: Selenium manager failed for: C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\windows\\selenium-manager.exe --browser chrome. ",
+              "",
+              "",
+              "During handling of the above exception, another exception occurred:",
+              "",
+              "Traceback (most recent call last):",
+              "  File \"C:\\Python310\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"C:\\Python310\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"features\\steps\\e2esteps.py\", line 10, in launch_browser",
+              "    context.driver = webdriver.Chrome(executable_path=TestData.CHROME_EXECUTABLE_PATH)",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\chrome\\webdriver.py\", line 81, in __init__",
+              "    super().__init__(",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\chromium\\webdriver.py\", line 103, in __init__",
+              "    self.service.start()",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 100, in start",
+              "    raise err",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 90, in start",
+              "    self._start_process(self.path)",
+              "  File \"C:\\Python310\\lib\\site-packages\\selenium\\webdriver\\common\\service.py\", line 213, in _start_process",
+              "    raise WebDriverException(",
+              "selenium.common.exceptions.WebDriverException: Message: 'chromedriver.exe' executable needs to be in PATH. Please see https://chromedriver.chromium.org/home",
+              ""
+            ],
+            "status": "failed"
           },
           "step_type": "given"
         },
         {
           "keyword": "And",
           "location": "features/e2e.feature:5",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:20"
-          },
           "name": "Provide the credentials",
-          "result": {
-            "duration": 0.24552130699157715,
-            "status": "passed"
-          },
           "step_type": "given"
         },
         {
           "keyword": "When",
           "location": "features/e2e.feature:6",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:29"
-          },
           "name": "Click on the Login button",
-          "result": {
-            "duration": 0.10700130462646484,
-            "status": "passed"
-          },
           "step_type": "when"
         },
         {
           "keyword": "Then",
           "location": "features/e2e.feature:7",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:37"
-          },
           "name": "Login is successful and inventory is opened",
-          "result": {
-            "duration": 0.016997814178466797,
-            "status": "passed"
-          },
           "step_type": "then"
         },
         {
           "keyword": "And",
           "location": "features/e2e.feature:17",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:84"
-          },
           "name": "Click hamburguer menu and click log out link",
-          "result": {
-            "duration": 0.7625999450683594,
-            "status": "passed"
-          },
           "step_type": "then"
         },
         {
           "keyword": "Then",
           "location": "features/e2e.feature:18",
-          "match": {
-            "arguments": [],
-            "location": "features/steps/e2esteps.py:89"
-          },
           "name": "You'll be out of the system",
-          "result": {
-            "duration": 0.0009822845458984375,
-            "status": "passed"
-          },
           "step_type": "then"
         }
       ],
@@ -267,7 +229,7 @@
   "keyword": "Feature",
   "location": "features/e2e.feature:1",
   "name": "Saucelabs demo End to end",
-  "status": "passed",
+  "status": "failed",
   "tags": []
 }
 ]
